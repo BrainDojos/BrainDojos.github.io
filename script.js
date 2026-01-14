@@ -139,6 +139,17 @@ You should have acknowledged his specific achievements to soften the blow and pr
         }
       }
 
+      // Change 'Skip' to 'Continue' and make it primary
+      const currentSection = this.closest('.screen');
+      const skipBtn = currentSection.querySelector('.skip-btn');
+      if (skipBtn) {
+        skipBtn.textContent = "Continue";
+        skipBtn.classList.add('btn-primary');
+        skipBtn.classList.remove('nav-btn');
+        // Add 'btn' class if it wasn't there to ensure primary styling applies correctly
+        skipBtn.classList.add('btn');
+      }
+
       // REMOVED: Auto advance
       // User must scroll manually or click Skip/Next (which we might rename to Next now)
     });
