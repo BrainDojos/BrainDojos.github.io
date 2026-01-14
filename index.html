@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Dojos - Daily Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <!-- Section 1: Intro / News Summary -->
+        <section class="screen active" id="intro">
+            <div class="content-wrapper">
+                <div class="image-container">
+                    <img src="yermak.webp" alt="Andriy Yermak" id="heroImage">
+                    <div class="badge">Daily Intel</div>
+                </div>
+                <div class="text-content">
+                    <h1>The Resignation</h1>
+                    <p class="summary-text">
+                        <b>Zelensky's Top Aide Resigns Amid Widening Corruption Scandal.</b>
+                        Andriy Yermak, President Volodymyr Zelensky's chief of staff and top peace negotiator, became the highest-ranking casualty of an investigation into a vast kickback scheme.
+                    </p>
+                    <button class="btn btn-primary next-btn">Start Challenge</button>
+                    <!-- No Previous button on first screen -->
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Section 2: Question 1 -->
+        <section class="screen" id="q1">
+            <div class="nav-controls top-right">
+                <button class="nav-btn prev-btn" aria-label="Previous">↑</button>
+                <button class="nav-btn skip-btn" aria-label="Skip">Skip</button>
+            </div>
+            <div class="content-wrapper">
+                <div class="question-header">1 <span>/ 3</span></div>
+                <h2>CLAIM: Mr. Yermak had to resign, because his name appeared in an investigation of corruption among high state officials.</h2>
+                <div class="options">
+                    <button class="option-btn" data-correct="false">
+                        <span class="key">A</span> Yes
+                    </button>
+                    <button class="option-btn" data-correct="true">
+                        <span class="key">B</span> No
+                    </button>
+                    <button class="option-btn" data-correct="false">
+                        <span class="key">C</span> We don't know
+                    </button>
+                </div>
+            </div>
+            <div class="nav-controls bottom-center">
+                 <!-- Mobile friendly nav could go here too, but side/corner is standard for typeform -->
+            </div>
+        </section>
+
+        <!-- Section 3: Question 2 -->
+        <section class="screen" id="q2">
+             <div class="nav-controls top-right">
+                <button class="nav-btn prev-btn" aria-label="Previous">↑</button>
+                <button class="nav-btn skip-btn" aria-label="Skip">Skip</button>
+            </div>
+            <div class="content-wrapper">
+                <div class="question-header">2 <span>/ 3</span></div>
+                <h2>Which of these is a primary function of the Office?</h2>
+                <div class="options">
+                    <button class="option-btn" data-correct="true">
+                        <span class="key">A</span> Ensuring execution of Presidential decrees
+                    </button>
+                    <button class="option-btn" data-correct="false">
+                        <span class="key">B</span> Voting on new legislation
+                    </button>
+                    <button class="option-btn" data-correct="false">
+                        <span class="key">C</span> Commanding the Armed Forces directly
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Question 3 -->
+        <section class="screen" id="q3">
+             <div class="nav-controls top-right">
+                <button class="nav-btn prev-btn" aria-label="Previous">↑</button>
+                <button class="nav-btn skip-btn" aria-label="Skip">Skip</button>
+            </div>
+            <div class="content-wrapper">
+                <div class="question-header">3 <span>/ 3</span></div>
+                <h2>CLAIM: Thanks to being fluent in English, Mr. Yermak led most of the negotiations about military support with western partners.</h2>
+                <div class="options">
+                    <button class="option-btn" data-correct="false">
+                        <span class="key">A</span> Yes
+                    </button>
+                    <button class="option-btn" data-correct="true">
+                        <span class="key">B</span> No
+                    </button>
+                    <button class="option-btn" data-correct="false">
+                        <span class="key">C</span> We don't know
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Challenge Intro -->
+        <section class="screen" id="challenge-intro">
+             <div class="nav-controls top-right">
+                <button class="nav-btn prev-btn" aria-label="Previous">↑</button>
+            </div>
+            <div class="content-wrapper centered">
+                <div class="icon-header">🎯</div>
+                <h2>The Challenge</h2>
+                <p>You are President Zelensky's communications advisor. You need to draft the <strong>official announcement</strong> of the resignation.</p>
+                <p>The goal is to maintain stability and project strength.</p>
+                <button class="btn btn-primary next-btn">Accept Challenge</button>
+            </div>
+        </section>
+
+        <!-- Section 6: Main Point Input -->
+        <section class="screen" id="input-point">
+             <div class="nav-controls top-right">
+                <button class="nav-btn prev-btn" aria-label="Previous">↑</button>
+            </div>
+            <div class="content-wrapper">
+                <h2>What should be the core message of the speech?</h2>
+                <p class="sub-label">One sentence summary of the key message.</p>
+                <div class="input-group">
+                    <textarea id="mainPointInput" placeholder="Type your answer here..."></textarea>
+                    <button class="btn-enter action-btn disabled" id="generatePromptBtn">OK <span class="enter-icon">↵</span></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Prompt Editor -->
+        <section class="screen" id="edit-prompt">
+             <div class="nav-controls top-right">
+                <button class="nav-btn prev-btn" aria-label="Previous">↑</button>
+            </div>
+            <div class="content-wrapper">
+                <h2>Refine Your Prompt</h2>
+                <p class="sub-label">This is what the AI will use to write the speech.</p>
+                <div class="prompt-box">
+                    <textarea id="promptEditor"></textarea>
+                </div>
+                <button class="btn btn-primary action-btn" id="generateSpeechBtn">Generate Speech</button>
+            </div>
+        </section>
+
+        <!-- Section 8: Result & Evaluation -->
+        <section class="screen" id="result-view">
+           <div class="content-wrapper scrollable-wrapper">
+                <div class="result-section">
+                    <h3>Generated Speech</h3>
+                    <div id="speechOutput" class="streaming-text"></div>
+                </div>
+                
+                <div class="evaluation-section hidden" id="evaluationSection">
+                    <h3>AI Evaluation</h3>
+                    <div class="score-ring">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <text x="18" y="20.35" class="percentage">0</text>
+                        </svg>
+                    </div>
+                    <div id="evalText" class="streaming-text secondary"></div>
+                </div>
+                <div class="button-group">
+                    <button class="btn btn-secondary" id="tryAgainBtn">Try Again</button>
+                    <button class="btn btn-primary" id="doneBtn">Done</button>
+                </div>
+           </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
