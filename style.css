@@ -143,6 +143,34 @@ p {
   opacity: 0.7;
 }
 
+/* Article Links */
+.related-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.article-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.article-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.source-name {
+  font-weight: 600;
+}
+
 .question-header {
   font-family: var(--font-heading);
   color: var(--primary);
