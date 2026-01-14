@@ -385,6 +385,38 @@ p {
   border-color: var(--error);
 }
 
+.explanation {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  padding: 12px;
+  border-radius: 4px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.explanation.correct {
+  color: var(--success);
+  background: rgba(0, 135, 68, 0.1);
+  border-left: 2px solid var(--success);
+}
+
+.explanation.wrong {
+  color: var(--error);
+  background: rgba(214, 45, 32, 0.1);
+  border-left: 2px solid var(--error);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Inputs */
 .input-group {
   display: flex;

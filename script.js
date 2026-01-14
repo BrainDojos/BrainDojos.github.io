@@ -128,10 +128,19 @@ You should have acknowledged his specific achievements to soften the blow and pr
         parent.querySelector('[data-correct="true"]').classList.add('correct');
       }
 
-      // Auto advance after short delay
-      setTimeout(() => {
-        scrollToNext(this);
-      }, 800);
+      // Show explanation
+      const explanation = parent.parentElement.querySelector('.explanation');
+      if (explanation) {
+        explanation.classList.remove('hidden', 'correct', 'wrong');
+        if (isCorrect) {
+          explanation.classList.add('correct');
+        } else {
+          explanation.classList.add('wrong');
+        }
+      }
+
+      // REMOVED: Auto advance
+      // User must scroll manually or click Skip/Next (which we might rename to Next now)
     });
   });
 
