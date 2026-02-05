@@ -267,8 +267,24 @@ nav a:hover {
 }
 
 .icon {
-  font-size: 2.5rem;
   margin-bottom: 20px;
+}
+
+.icon--circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon--circle svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--text-main);
 }
 
 /* SEGMENT CARDS */
@@ -449,6 +465,22 @@ nav a:hover {
 .section-cta .btn:hover {
   background: #000;
   transform: scale(1.05);
+}
+
+.cta-email {
+  margin-top: 16px;
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 0;
+}
+
+.cta-email a {
+  color: var(--text-main);
+  text-decoration: underline;
+}
+
+.cta-email a:hover {
+  opacity: 0.8;
 }
 
 /* FOOTER */
