@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Dojos – History: JFK and Cold War Strategy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <!-- Section 1: Intro / Lesson context -->
+        <section class="screen active" id="intro">
+            <div class="content-wrapper">
+                <div class="image-container">
+                    <img src="jfk.png" alt="President John F. Kennedy" id="heroImage">
+                    <div class="badge">History – Early 1960s</div>
+                </div>
+                <div class="text-content">
+                    <h1>JFK and the Cold War</h1>
+                    <p class="summary-text">
+                        <b>Context:</b> President Kennedy faces a Soviet Union that has just scored a major propaganda victory in space. The Cold War is at a critical juncture—the superpowers are competing for global influence without direct military conflict. Your task: advise the President on a <strong>Cold War strategy</strong> against the Soviet Union. What approach should the United States take?
+                    </p>
+                    
+                    <div class="related-articles">
+                        <a href="https://en.wikipedia.org/wiki/Space_Race" target="_blank" class="article-link">
+                            <span class="source-icon">📰</span> 
+                            <span class="source-name">Wikipedia: Space Race</span>
+                        </a>
+                        <span class="source-name textbook-ref">Textbook: <em>US History Vol. 2</em>, Ch. 14; <em>Twentieth-Century Diplomacy</em>, pp. 203–207.</span>
+                    </div>
+                    <button class="btn btn-primary next-btn">Start Lesson</button>
+                    <!-- No Previous button on first screen -->
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Section 2: Question 1 -->
+        <section class="screen" id="q1">
+            <div class="nav-controls top-right">
+                <button class="nav-btn prev-btn" aria-label="Previous">↑</button>
+                <button class="nav-btn skip-btn" aria-label="Skip">Skip</button>
+            </div>
+            <div class="content-wrapper">
+                <div class="question-header">1 <span>/ 3</span></div>
+                <h2>In April 1961, what did the Soviet Union achieve that alarmed American leaders?</h2>
+                <div class="options">
+                    <button class="option-btn" data-correct="true">
+                        <span class="key">A</span> First human in orbit (Yuri Gagarin)
+                    </button>
+                    <button class="option-btn" data-correct="false">
+                        <span class="key">B</span> First artificial satellite (Sputnik)
+                    </button>
+                    <button class="option-btn" data-correct="false">
+                        <span class="key">C</span> First manned moon landing
+                    </button>
+                    <div class="explanation hidden">
+                        Correct Answer: Yuri Gagarin orbited Earth on April 12, 1961. Sputnik was in 1957; the US achieved the first moon landing in 1969.
+                    </div>
+                </div>
+            </div>
+            <div class="nav-controls bottom-center">
+                 <!-- Mobile friendly nav could go here too, but side/corner is standard for typeform -->
+            </div>
+        </section>
+
+        <!-- Section 3: Question 2 -->
+        <section class="screen" id="q2">
+             <div class="nav-controls top-right">
+                <button class="nav-btn prev-btn" aria-label="Previous">↑</button>
+                <button class="nav-btn skip-btn" aria-label="Skip">Skip</button>
+            </div>
+            <div class="content-wrapper">
+                <div class="question-header">2 <span>/ 3</span></div>
+                <h2>What did the Soviet Union achieve in 1957 that first raised American concerns about Soviet technology?</h2>
+                <div class="options">
+                    <button class="option-btn" data-correct="true">
+                        <span class="key">A</span> First artificial satellite (Sputnik)
+                    </button>
+                    <button class="option-btn" data-correct="false">
+                        <span class="key">B</span> First human in space
+                    </button>
+                    <button class="option-btn" data-correct="false">
+                        <span class="key">C</span> First intercontinental ballistic missile
+                    </button>
+                    <div class="explanation hidden">
+                        Correct Answer: Sputnik 1 was launched in October 1957. The first human in space was Gagarin in 1961; ICBMs existed on both sides by the late 1950s but Sputnik was the dramatic public milestone.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Question 3 -->
+        <section class="screen" id="q3">
+             <div class="nav-controls top-right">
+                <button class="nav-btn prev-btn" aria-label="Previous">↑</button>
+                <button class="nav-btn skip-btn" aria-label="Skip">Skip</button>
+            </div>
+            <div class="content-wrapper">
+                <div class="question-header">3 <span>/ 3</span></div>
+                <h2>The Berlin Wall was built in 1961, the same year Kennedy took office.</h2>
+                <div class="options">
+                    <button class="option-btn" data-correct="true">
+                        <span class="key">A</span> True
+                    </button>
+                    <button class="option-btn" data-correct="false">
+                        <span class="key">B</span> False
+                    </button>
+                    <button class="option-btn" data-correct="false">
+                        <span class="key">C</span> We don't know
+                    </button>
+                    <div class="explanation hidden">
+                        Correct Answer: True. East Germany began building the Wall in August 1961, deepening the divide between East and West and raising Cold War tensions during Kennedy's first year.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Challenge Intro -->
+        <section class="screen" id="challenge-intro">
+             <div class="nav-controls top-right">
+                <button class="nav-btn prev-btn" aria-label="Previous">↑</button>
+            </div>
+            <div class="content-wrapper centered">
+                <div class="icon-header">🎯</div>
+                <h2>The Challenge</h2>
+                <p>You are advising President Kennedy. Propose a <strong>Cold War strategy</strong> against the Soviet Union.</p>
+                <p>What is the core of your strategy? One sentence.</p>
+                <button class="btn btn-primary next-btn">Accept Challenge</button>
+            </div>
+        </section>
+
+        <!-- Section 6: Main Point Input -->
+        <section class="screen" id="input-point">
+             <div class="nav-controls top-right">
+                <button class="nav-btn prev-btn" aria-label="Previous">↑</button>
+            </div>
+            <div class="content-wrapper">
+                <h2>What is the core of your strategy?</h2>
+                <p class="sub-label">One sentence.</p>
+                <div class="input-group">
+                    <textarea id="mainPointInput" placeholder="Type your answer here..."></textarea>
+                    <button class="btn-enter action-btn disabled" id="generatePromptBtn">OK <span class="enter-icon">↵</span></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Prompt Editor -->
+        <section class="screen" id="edit-prompt">
+             <div class="nav-controls top-right">
+                <button class="nav-btn prev-btn" aria-label="Previous">↑</button>
+            </div>
+            <div class="content-wrapper">
+                <h2>Refine Your Prompt</h2>
+                <p class="sub-label">This is what the AI will use to draft the strategy.</p>
+                <div class="prompt-box">
+                    <textarea id="promptEditor"></textarea>
+                </div>
+                <button class="btn btn-primary action-btn" id="generateSpeechBtn">Generate Strategy</button>
+            </div>
+        </section>
+
+        <!-- Section 8: Result & Evaluation -->
+        <section class="screen" id="result-view">
+           <div class="content-wrapper scrollable-wrapper">
+                <div class="result-section">
+                    <h3>Generated Strategy</h3>
+                    <div id="speechOutput" class="streaming-text"></div>
+                </div>
+                
+                <div class="evaluation-section hidden" id="evaluationSection">
+                    <h3>AI Evaluation</h3>
+                    <div class="score-ring">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <text x="18" y="20.35" class="percentage">0</text>
+                        </svg>
+                    </div>
+                    <div id="evalText" class="streaming-text secondary"></div>
+                </div>
+                <div class="button-group">
+                    <button class="btn btn-secondary" id="tryAgainBtn">Try Again</button>
+                    <button class="btn btn-primary" id="doneBtn">Done</button>
+                </div>
+           </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
