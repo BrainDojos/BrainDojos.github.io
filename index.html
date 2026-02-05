@@ -3,139 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrainDojos | Disengage Autopilot</title>
+    <title>BrainDojos | Critical Thinking for the AI Age</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-theme="light">
+<body>
 
     <!-- Header -->
     <header class="main-header">
-        <div class="nav-container">
+        <div class="container nav-container">
             <a href="#" class="logo">
-                <img src="BD_Logo_Full_FullColor.png" alt="BrainDojos Logo">
+                <img src="BD_Logo_Icon_FullColor.svg" alt="BrainDojos Icon" class="logo-icon">
+                <img src="BD_Logo_Text_FullColor.svg" alt="BrainDojos Text" class="logo-text">
             </a>
             <nav>
                 <ul>
-                    <li><a href="#trap">The Trap</a></li>
-                    <li><a href="#antidote">The Antidote</a></li>
-                    <li><a href="#method">The Method</a></li>
-                    <li><a href="#contact" class="btn btn-primary">Join Resistance</a></li>
+                    <li><a href="#gap">The AI Gap</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#how">How It Works</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero section-scroll" id="hero">
-        <div class="container hero-content">
-            <div class="fade-up">
-                <h1>DISENGAGE<br>AUTOPILOT.</h1>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-layout">
+            <div class="hero-text fade-up">
+                <h1>Master AI through<br>Active Thinking.</h1>
+                <p class="hero-sub">True AI literacy isn't just about writing prompts—it's about evaluating outputs. We teach the critical thinking skills that make AI a superpower, not a crutch.</p>
+                <div class="hero-actions">
+                    <a href="#solutions" class="btn btn-primary btn-large">Explore Solutions</a>
+                    <a href="#how" class="btn btn-secondary btn-large">See The Method</a>
+                </div>
             </div>
-            <p class="hero-sub fade-up">Critical thinking software for the AI generation. Don't let your students or team lose their edge.</p>
-            <div class="hero-actions fade-up">
-                <a href="#contact" class="btn btn-primary btn-hero">START TRAINING</a>
-            </div>
-        </div>
-        
-        <div class="scroll-indicator">
-            <span>SCROLL TO EXPLORE</span>
-            <div class="line"></div>
-        </div>
-    </section>
-
-    <!-- SECTION 1: THE TRAP (Dark Mode) -->
-    <section id="trap" class="section-trap section-scroll" data-theme="dark">
-        <div class="container">
-            <div class="manifesto-text fade-up">
-                <h2 class="outline-text">THE COMFORT<br>TRAP.</h2>
-                <div class="content-block">
-                    <p class="mono-text">ISSUE: SKILL ATROPHY</p>
-                    <p>AI answers everything instantly. The result? Learners stop struggling. Thinking stops happening.<br>
-                    When convenience becomes the default, critical reasoning skills begin to fade.</p>
-                    <p class="highlight-text">Don't lose the human edge.</p>
+            <div class="hero-visual fade-up">
+                <!-- Abstract "Gate" Graphic derived from Logo using CSS -->
+                <div class="abstract-gate">
+                    <div class="sun-circle"></div>
+                    <div class="gate-shape"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 2: THE ANTIDOTE (Yellow Mode) -->
-    <section id="antidote" class="section-antidote section-scroll" data-theme="yellow">
-        <div class="container split-layout">
-            <div class="antidote-visual fade-up">
-                <div class="friction-graphic">
-                    <div class="circle"></div>
-                    <div class="line-strike"></div>
-                    <div class="label">FRICTION</div>
-                </div>
-            </div>
-            <div class="antidote-content fade-up">
-                <h2>PRODUCTIVE<br>FRICTION.</h2>
-                <p>Real learning requires effort.</p>
-                <p>BrainDojos prompts users to wrestle with problems. No multiple choice. No shortcut buttons. 
-                Just you, a challenging scenario, and a Socratic AI coach that guides you to the answer instead of giving it to you.</p>
-                <a href="#method" class="btn btn-outline" style="margin-top:20px; display:inline-block;">See Our Method</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 3: THE METHOD (Light Mode) -->
-    <section id="method" class="section-method section-scroll" data-theme="light">
+    <!-- The Challenge (The AI Gap) -->
+    <section id="gap" class="section-light">
         <div class="container">
-            <h2 class="section-title fade-up">THE TRAINING PROTOCOL</h2>
+            <div class="section-header text-center fade-up">
+                <h2>The Capability Gap</h2>
+                <p>Anyone can access intelligence. Few can verify it.</p>
+            </div>
             
-            <div class="bento-grid fade-up">
-                <div class="bento-card card-tall">
-                    <div class="card-header">
-                        <span class="mono-tag">01 // THE DOJO</span>
+            <div class="grid-2 fade-up">
+                <div class="info-card">
+                    <div class="icon">🤖</div>
+                    <h3>The Trap: Passive Consumption</h3>
+                    <p>When students and employees accept AI outputs without question, judgment atrophies. Errors go unnoticed. Strategy suffers.</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">🧠</div>
+                    <h3>The Fix: Active Evaluation</h3>
+                    <p>We train users to treat AI as a junior researchers, not an oracle. Learn to dismantle arguments, spot hallucinations, and refine logic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions (Segmentation) -->
+    <section id="solutions" class="section-cream">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2>AI Fluency for Your Organization</h2>
+            </div>
+            
+            <div class="grid-2 fade-up">
+                <div class="segment-card">
+                    <div class="segment-header school-bg">
+                        <h3>For Schools</h3>
                     </div>
-                    <h3>Challenge the AI.</h3>
-                    <p>Enter the ring with an AI that challenges your assumptions. It plays devil's advocate. It spots logical fallacies. You don't just "chat"—you spar.</p>
-                    <div class="visual-abstract">
-                        <div class="spar-line"></div>
-                        <div class="spar-line"></div>
-                        <div class="spar-line"></div>
+                    <div class="segment-body">
+                        <p class="highlight">The AI-Ready Classroom.</p>
+                        <p>Prepare students for a hybrid workforce. Move beyond "don't use GPT" to "use GPT brilliantly and skeptically."</p>
+                        <ul class="feature-list">
+                            <li><strong>Prompt Iteration:</strong> Learn to guide the AI.</li>
+                            <li><strong>Verification:</strong> Spot logic gaps & hallucinations.</li>
+                            <li><strong>Argumentation:</strong> Build un-fakeable reasoning skills.</li>
+                        </ul>
+                        <a href="#contact" class="link-arrow">Partner with us &rarr;</a>
                     </div>
                 </div>
                 
-                <div class="bento-card">
-                    <div class="card-header">
-                        <span class="mono-tag">02 // CREATOR STUDIO</span>
+                <div class="segment-card">
+                    <div class="segment-header biz-bg">
+                        <h3>For Business</h3>
                     </div>
-                    <h3>For Leaders.</h3>
-                    <p>Turn lesson material into cognitive workouts. Teachers and Managers: stop grading AI-generated slop. Start assigning workouts that AI can't fake.</p>
+                    <div class="segment-body">
+                        <p class="highlight">Enterprise AI Literacy.</p>
+                        <p>Upskill your workforce to collaborate with agents. Ensure your team has the cognitive tools to direct high-performance AI workflows.</p>
+                        <ul class="feature-list">
+                            <li><strong>Strategic Direction:</strong> Decomposing complex problems.</li>
+                            <li><strong>Decision Making:</strong> Evaluating AI-generated options.</li>
+                            <li><strong>Cognitive Resilience:</strong> Maintaining judgment under speed.</li>
+                        </ul>
+                        <a href="#contact" class="link-arrow">Upskill your team &rarr;</a>
+                    </div>
                 </div>
-                
-                <div class="bento-card">
-                    <div class="card-header">
-                        <span class="mono-tag">03 // ANALYTICS</span>
-                    </div>
-                    <h3>Cognitive Sweat.</h3>
-                    <p>We track the struggle. Measure engagement depth, reasoning steps, and improvement over time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how" class="section-light">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2>The Training Loop</h2>
+            </div>
+            
+            <div class="steps-row fade-up">
+                <div class="step-item">
+                    <div class="step-circle">1</div>
+                    <h3>Simulate</h3>
+                    <p>Use <strong>Creator Studio</strong> to generate AI collaboration scenarios tailored to your specific subject matter or industry.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-item">
+                    <div class="step-circle">2</div>
+                    <h3>Spar</h3>
+                    <p>Users enter the Dojo. They debate, refine, and co-create with Socratic AI agents that challenge their thinking.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-item">
+                    <div class="step-circle">3</div>
+                    <h3>Verify</h3>
+                    <p>Measure the "thought process." Analytics track how well users identify errors and improve their reasoning logic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders (Trust) -->
+    <section class="section-cream">
+        <div class="container">
+            <div class="section-header text-center fade-up">
+                <h2>Built by Experts</h2>
+            </div>
+            <div class="founders-row fade-up">
+                <div class="founder-simple">
+                     <div class="avatar">MP</div>
+                     <div>
+                        <h4>Martin Poliačik</h4>
+                        <span class="role">Critical Thinking Expert</span>
+                     </div>
+                </div>
+                <div class="founder-simple">
+                     <div class="avatar">TH</div>
+                     <div>
+                        <h4>Tomáš Halgaš</h4>
+                        <span class="role">AI Technologist</span>
+                     </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA -->
-    <section id="contact" class="section-cta section-scroll" data-theme="dark">
+    <section id="contact" class="section-cta">
         <div class="container text-center fade-up">
-            <h2>FUTURE-PROOF<br>YOUR MIND.</h2>
-            <p>We are currently onboarding select schools and enterprise partners.</p>
-            <br>
-            <a href="mailto:hello@braindojos.com" class="btn btn-primary btn-giant">GET IN TOUCH</a>
+            <h2>Future-proof your people.</h2>
+            <p>Join the schools and enterprises defining the next generation of human-AI collaboration.</p>
+            <a href="mailto:hello@braindojos.com" class="btn btn-primary btn-large">Start the Conversation</a>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p class="mono-text">BRAINDOJOS &copy; 2026</p>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <img src="BD_Logo_Icon_FullColor.svg" alt="BrainDojos" style="height: 30px; opacity: 0.8; filter: grayscale(100%);">
+                <p>&copy; 2026 BrainDojos.</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:hello@braindojos.com">Contact</a>
+            </div>
         </div>
     </footer>
 
